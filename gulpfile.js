@@ -23,10 +23,6 @@ var historyApiFallback = require('connect-history-api-fallback')
 */
 
 gulp.task('styles',function() {
-  // move over fonts
-  // gulp.src('css/fonts/**.*')
-  //   .pipe(gulp.dest('build/css/fonts'))
-
   // Compiles CSS
   gulp.src('scss/*.scss')
     .pipe(sass())
@@ -35,16 +31,18 @@ gulp.task('styles',function() {
 });
 
 /*
-  Images
+  Images Task
 */
+
 gulp.task('images',function(){
   gulp.src('images/**')
     .pipe(gulp.dest('./build/images'))
 });
 
 /*
-  Browser Sync
+  Browser Sync Task
 */
+
 gulp.task('browser-sync', function() {
     browserSync({
         // we need to disable clicks and forms for when we test multiple rooms
@@ -97,13 +95,21 @@ function buildScript(file, watch) {
   return rebundle();
 }
 
+/*
+  Scripts Task
+*/
+
+
 gulp.task('scripts', function() {
   return buildScript('main.js', false); // this will run once because we set watch to false
 });
 
+/*
+  Set Up Default Task
+*/
+
 // run 'scripts' task first, then watch for future changes
 gulp.task('default', ['images','styles','scripts','browser-sync'], function() {
-  gulp.watch('scss/*.scss', ['styles']); // gulp watch for sass changes
-  // gulp.watch('css/**/*', ['styles']); // gulp watch for stylus changes
+  gulp.watch('scss/*.scss', ['styles']); // watch for sass changes
   return buildScript('main.js', true); // browserify watch for JS changes
 });
