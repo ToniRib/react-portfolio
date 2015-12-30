@@ -19,7 +19,7 @@ var h = require('./helpers');
 var App = React.createClass({
   render: function() {
     return (
-      <div>Hello!</div>
+      <div className="trial">Hello!</div>
     )
   }
 })
