@@ -19,7 +19,10 @@ var h = require('./helpers');
 var App = React.createClass({
   render: function() {
     return (
-      <div className="trial">Hello!</div>
+      <div>
+        <div className="trial">Hello!</div>
+        <div className="link">This is not a real link</div>
+      </div>
     )
   }
 })
