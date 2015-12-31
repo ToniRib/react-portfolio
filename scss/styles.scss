@@ -1,10 +1,17 @@
-@import 'links';
+// Define the font stack and colors
+$font-stack:    16px 'Ubuntu', sans-serif;
+$green-color:   #76ff03;
+$blue-color:    #00e5ff;
 
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #00F5FF;
-
-.trial {
-  font: 100% $font-stack;
-  color: $primary-color;
-  font-size: 120px;
+body {
+  font: $font-stack;
 }
+
+nav {
+  text-align: center;
+  font-size: 1.3em;
+  word-spacing: 1.3em;
+  margin: 0.5em 0;
+}
+
+@import 'links';

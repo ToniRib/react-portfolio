@@ -42,7 +42,9 @@ var Header = React.createClass({
   render: function() {
     return (
       <header>
-        <img src="build/images/toni_rib_header_v2.svg" alt="toni rib logo" />
+        <div class="row">
+          <img class="img-responsive center-block main-img" src="build/images/toni_rib_header_v2.svg" alt="toni rib logo" />
+        </div>
         < NavBar />
       </header>
     )

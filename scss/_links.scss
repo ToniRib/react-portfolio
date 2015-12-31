@@ -1,3 +1,14 @@
-.link {
-  color: red;
+a {
+  text-decoration: none;
+  color: $green-color;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  cursor: hand;
+}
+
+a:hover {
+  color: $blue-color;
 }
