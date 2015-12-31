@@ -1,7 +1,11 @@
 // Define the font stack and colors
 $font-stack:    16px 'Ubuntu', sans-serif;
-$green-color:   #76ff03;
-$blue-color:    #00e5ff;
+
+$green-color:              #76ff03;
+$blue-color-link-hover:    #00e5ff;
+$blue-color:               #27c8cc;
+$yellow-color:             #ffea1d;
+$pink-color:               #b21752;
 
 body {
   font: $font-stack;
@@ -14,4 +18,5 @@ nav {
   margin: 0.5em 0;
 }
 
+@import 'media_queries';
 @import 'links';
