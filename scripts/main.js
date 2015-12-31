@@ -19,13 +19,35 @@ var h = require('./helpers');
 var App = React.createClass({
   render: function() {
     return (
-      <div>
-        <div className="trial">Hello!</div>
-        <div className="link">This is not a real link</div>
+      < Header />
+    )
+  }
+});
+
+var NavBar = React.createClass({
+  render: function() {
+    return(
+      <div class="row">
+        <nav>
+          <a id="bio-link" href="#bio-title">Bio</a>
+          <a id="portfolio-link" href="#portfolio-title">Portfolio</a>
+          <a id="contact-link" href="#contact-title">Contact</a>
+        </nav>
       </div>
     )
   }
-})
+});
+
+var Header = React.createClass({
+  render: function() {
+    return (
+      <header>
+        <img src="build/images/toni_rib_header_v2.svg" alt="toni rib logo" />
+        < NavBar />
+      </header>
+    )
+  }
+});
 
 var routes = (
   <Router history={createBrowserHistory()}>
