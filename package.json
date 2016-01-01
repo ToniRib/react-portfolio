@@ -8,10 +8,12 @@
   },
   "author": "Toni Rib",
   "license": "ISC",
+  "repository": "https://github.com/ToniRib/react-portfolio",
   "devDependencies": {
     "autobind-decorator": "1.3.2",
     "babel": "5.8.23",
     "babelify": "6.4.0",
+    "bootstrap-sass": "^3.3.6",
     "browser-sync": "2.9.11",
     "browserify": "11.2.0",
     "connect-history-api-fallback": "1.1.0",
