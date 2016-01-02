@@ -51,6 +51,21 @@ var Header = React.createClass({
   }
 });
 
+var PortfolioEntry = React.createClass({
+  render: function() {
+    return (
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <a data-toggle="modal" data-target="#portfolio-modal">
+          <div class="box" id="portfolio-site">
+            <span class="portfolio-text" id="portfolio-site-text">Udacity Project 1:<br />Portfolio Site</span>
+            <img class="portfolio-image png-img" src="img/udacity-portfolio-site.png" alt="TR key logo" />
+          </div>
+        </a>
+      </div>
+    )
+  }
+});
+
 var routes = (
   <Router history={createBrowserHistory()}>
     <Route path="/" component={App} />
