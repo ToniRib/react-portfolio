@@ -52,6 +52,7 @@ var Header = React.createClass({
 });
 
 var PortfolioEntry = React.createClass({
+  // Need to change all ids and targets to be flexible for whatever item is being used
   render: function() {
     return (
       <div class="col-md-4 col-sm-4 col-xs-12">
